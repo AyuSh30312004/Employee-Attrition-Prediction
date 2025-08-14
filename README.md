@@ -1,16 +1,16 @@
-# 🎯 Employee Attrition Prediction System
+#  Employee Attrition Prediction System
 
 A comprehensive machine learning application that predicts employee attrition using advanced algorithms and provides actionable insights through an interactive web interface.
 
-## 🌟 Features
+##  Features
 
-- **🔮 Predictive Analytics**: Advanced ML models with 94%+ accuracy
-- **📊 Interactive Dashboard**: Real-time visualizations and analytics
-- **🎨 Animated UI**: Modern, responsive interface with smooth animations
-- **📈 Performance Metrics**: Comprehensive model evaluation and monitoring
-- **💡 Actionable Insights**: Data-driven recommendations for HR teams
+- ** Predictive Analytics**: Advanced ML models with 94%+ accuracy
+- ** Interactive Dashboard**: Real-time visualizations and analytics
+- ** Animated UI**: Modern, responsive interface with smooth animations
+- ** Performance Metrics**: Comprehensive model evaluation and monitoring
+- ** Actionable Insights**: Data-driven recommendations for HR teams
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -20,13 +20,10 @@ A comprehensive machine learning application that predicts employee attrition us
 ### Installation
 
 1. **Clone the repository**
-   \`\`\`bash
    git clone https://github.com/yourusername/employee-attrition-predictor.git
    cd employee-attrition-predictor
-   \`\`\`
-
+  
 2. **Create virtual environment**
-   \`\`\`bash
    python -m venv venv
    
    # On Windows
@@ -34,29 +31,21 @@ A comprehensive machine learning application that predicts employee attrition us
    
    # On macOS/Linux
    source venv/bin/activate
-   \`\`\`
-
+  
 3. **Install dependencies**
-   \`\`\`bash
    pip install -r requirements.txt
-   \`\`\`
-
+  
 4. **Train the model**
-   \`\`\`bash
    python train_model.py
-   \`\`\`
-
+  
 5. **Run the application**
-   \`\`\`bash
    streamlit run app.py
-   \`\`\`
-
+  
 6. **Open your browser**
    Navigate to `http://localhost:8501`
 
 ## 📁 Project Structure
 
-\`\`\`
 employee-attrition-predictor/
 ├── app.py                 # Main Streamlit application
 ├── train_model.py         # Model training script
@@ -74,9 +63,8 @@ employee-attrition-predictor/
 └── scripts/              # Deployment and utility scripts
     ├── deploy.py
     └── data_generator.py
-\`\`\`
 
-## 🎮 Usage
+##  Usage
 
 ### 1. Home Page
 - Overview of system capabilities
@@ -98,7 +86,7 @@ employee-attrition-predictor/
 - Feature importance analysis
 - Model monitoring dashboard
 
-## 🔧 Configuration
+##  Configuration
 
 ### Model Parameters
 Edit `train_model.py` to adjust:
@@ -114,7 +102,7 @@ Modify `app.py` to change:
 - Layout and components
 - Visualization styles
 
-## 📊 Model Details
+##  Model Details
 
 ### Algorithm
 - **Primary**: Random Forest Classifier
@@ -135,12 +123,10 @@ Modify `app.py` to change:
 9. Job Role
 10. Education Level
 
-## 🚀 Deployment
+##  Deployment
 
 ### Local Development
-\`\`\`bash
 streamlit run app.py
-\`\`\`
 
 ### Streamlit Cloud
 1. Push code to GitHub
@@ -148,24 +134,20 @@ streamlit run app.py
 3. Deploy with one click
 
 ### Docker Deployment
-\`\`\`bash
 # Build image
 docker build -t employee-attrition-predictor .
 
 # Run container
 docker run -p 8501:8501 employee-attrition-predictor
-\`\`\`
 
 ### Heroku Deployment
-\`\`\`bash
 # Install Heroku CLI
 # Create Procfile: web: streamlit run app.py --server.port=$PORT --server.address=0.0.0.0
 
 heroku create your-app-name
 git push heroku main
-\`\`\`
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create feature branch (`git checkout -b feature/AmazingFeature`)
@@ -173,34 +155,34 @@ git push heroku main
 4. Push to branch (`git push origin feature/AmazingFeature`)
 5. Open Pull Request
 
-## 📝 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Scikit-learn for machine learning algorithms
 - Streamlit for the web framework
 - Plotly for interactive visualizations
 - The open-source community for inspiration
 
-## 📞 Support
+##  Support
 
 For support, email your.email@example.com or create an issue on GitHub.
 
 ---
 
-**Made with ❤️ and Python**
-\`\`\`
+**Made with Python**
 
-```python file="scripts/deploy.py"
+
+python file="scripts/deploy.py"
 import subprocess
 import sys
 import os
 
 def deploy_to_streamlit_cloud():
     """Deploy the application to Streamlit Cloud"""
-    print("🚀 Deploying to Streamlit Cloud...")
+    print(" Deploying to Streamlit Cloud...")
     
     # Check if git is initialized
     if not os.path.exists('.git'):
@@ -209,8 +191,8 @@ def deploy_to_streamlit_cloud():
         subprocess.run(['git', 'add', '.'])
         subprocess.run(['git', 'commit', '-m', 'Initial commit'])
     
-    print("✅ Ready for Streamlit Cloud deployment!")
-    print("📋 Next steps:")
+    print(" Ready for Streamlit Cloud deployment!")
+    print(" Next steps:")
     print("1. Push your code to GitHub")
     print("2. Go to https://share.streamlit.io/")
     print("3. Connect your GitHub repository")
@@ -219,7 +201,7 @@ def deploy_to_streamlit_cloud():
 
 def deploy_to_heroku():
     """Deploy the application to Heroku"""
-    print("🚀 Preparing Heroku deployment...")
+    print(" Preparing Heroku deployment...")
     
     # Create Procfile
     with open('Procfile', 'w') as f:
@@ -229,8 +211,8 @@ def deploy_to_heroku():
     with open('runtime.txt', 'w') as f:
         f.write('python-3.9.18\n')
     
-    print("✅ Heroku files created!")
-    print("📋 Next steps:")
+    print(" Heroku files created!")
+    print(" Next steps:")
     print("1. Install Heroku CLI")
     print("2. Run: heroku login")
     print("3. Run: heroku create your-app-name")
@@ -286,7 +268,7 @@ services:
     print("3. Or use: docker-compose up")
 
 if __name__ == "__main__":
-    print("🎯 Employee Attrition Predictor - Deployment Helper")
+    print(" Employee Attrition Predictor - Deployment Helper")
     print("Choose deployment option:")
     print("1. Streamlit Cloud")
     print("2. Heroku")
@@ -302,3 +284,4 @@ if __name__ == "__main__":
         create_docker_files()
     else:
         print("Invalid choice. Please run the script again.")
+
